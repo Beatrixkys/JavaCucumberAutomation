@@ -46,6 +46,10 @@ public class WebHandlers {
         return null;
     }
 
+    public static List<WebElement> findElementLinks(){
+        return WebDriverConfigurations.getCurrentDriver().findElements(By.tagName("a"));
+    }
+
     public static WebElement waitForElement(String locator){
         By by = findElementBy(locator);
         System.out.println(by);

@@ -14,11 +14,17 @@ import java.util.stream.Collectors;
 public class LocatorRepository {
 
     static Map<String, String> objectRepository = new HashMap<>();
+    static Map<String, String> dataRepository = new HashMap<>();
     static boolean isAndroid;
 
-    public static String  get(String key){
+    public static String get(String key){
         return objectRepository.get(key);
     }
+
+    public static String getValue(String key){
+        return dataRepository.get(key);
+    }
+
 
     public static void load() throws IOException {
         String dir =System.getProperty("user.dir");
@@ -34,11 +40,15 @@ public class LocatorRepository {
             JSONObject obj = new JSONObject(json);
             Map<String, Object> map = obj.toMap();
             for (Map.Entry<String,Object> entry : map.entrySet()){
-                 String value = (String) (((HashMap) entry.getValue()).get("web"));
+                String value = (String) (((HashMap) entry.getValue()).get("web"));
                 objectRepository.put(fileName + entry.getKey(), value);
-                if (((HashMap) entry.getValue()).size()>2){
+                /*if (((HashMap) entry.getValue()).size()>2){
                     objectRepository.put(fileName + entry.getKey() + ".expectedValue", value);
-                }
+                }*/
+            }
+            for (Map.Entry<String,Object> entry : map.entrySet()){
+                String value = (String) (((HashMap) entry.getValue()).get("expectedValue"));
+                dataRepository.put(fileName + entry.getKey(), value);
             }
         }
         System.out.println("Finished Loading Object Repository");

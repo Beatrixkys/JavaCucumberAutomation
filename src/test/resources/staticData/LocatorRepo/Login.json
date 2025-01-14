@@ -1,0 +1,26 @@
+{
+  "accountButton": {
+    "web": "id:menu-item-579"
+  },
+  "memberLoginButton":{
+    "web":"id:text_block-179-103"
+  },
+  "loginTitle":{
+    "web":"id:headline-7-410",
+    "expectedValue":"id:headline-7-410"
+  },
+  "loginInput":{
+    "web":"id:username"
+  },
+  "passwordInput":{
+    "web":"id:password"
+  },
+  "loginButton":{
+    "web":"className:woocommerce-button button woocommerce-form-login__submit"
+  },
+  "signUpButton":{
+    "web":"id:link_text-18-410"
+  }
+
+}
+

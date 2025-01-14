@@ -1,0 +1,82 @@
+{
+    "headerSubtitle":{
+        "web":"id:text_block-16-111",
+        "expectedValue": "Transform Your Trading Experience with AI"
+   },
+   "headerTitle":{
+        "web":"id:headline-17-111",
+        "expectedValue":"The World's Leading AI Algorithmic Trading"
+   },
+   "headerText":{
+        "web":"id:text_block-22-111",
+        "expectedValue":"As we expand globally, our commitment to excellence in AI technology remains strong."
+   },
+   "tradingFutureSubtitle":{
+        "web":"id:headline-589-111",
+        "expectedValue":"THE POWER OF AI ALGORITHMIC TRADING"
+   },
+   "tradingFutureTitle":{
+        "web":"id:headline-590-111",
+        "expectedValue":"Explore the Future of Trading"
+   },
+   "tradingFutureText":{
+        "web":"id:text_block-591-111",
+        "expectedValue":"Embark on a journey through the cutting-edge advancements shaping the future of trading, revolutionizing how you approach the market with AI-driven innovation."
+   },
+   "showcaseSubtitle":{
+          "web":"id:text_block-141-111",
+          "expectedValue" :"Ai-driven Trading In Action"
+   },
+   "showcaseTitle":{
+          "web":"id:headline-142-111", 
+          "expectedValue":"Interactive Showcase"
+   },
+   "advisorSubtitle":{
+          "web":"id:text_block-168-111",
+          "expectedValue":"improving profitability"
+   },
+   "advisorTitle":{
+          "web":"id:headline-169-111",
+          "expectedValue":"Top Rated Expert Advisors"
+   },
+   "advisorText":{
+          "web":"id:text_block-175-111",
+          "expectedValue":"AI-driven algorithmic trading"
+   },
+   "indicatorSubtitle":{
+          "web":"id:text_block-219-111",
+          "expectedValue":"Enhanced Market Analysis"
+   },
+   "indicatorTitle":{
+          "web":"id:headline-220-111",
+          "expectedValue":"Top Rated Indicators"
+   },
+   "indicatorText":{
+          "web":"id:text_block-223-111",
+          "expectedValue":"Advanced Analysis Tools"
+   },
+   "awardWinningTitle":{
+          "web":"id:headline-259-111",
+          "expectedValue":"Your Award-Winning, Trusted EA Developer"
+   },
+   "awardWinningSubtitle":{
+          "web":"id:text_block-260-111",
+          "expectedValue":"When you choose Algo Forest, you are choosing more than just an EA, you are choosing peace of mind. Our commitment to&nbsp; transparency, ethical practices, and customer satisfaction ensures that your investment is in safe hands."
+   }, 
+   "xPowerAISubtitle":{
+          "web":"id:text_block-344-111",
+          "expectedValue":"AI-Driven Automation for Forex Trading"
+   },
+   "xPowerAITitle":{
+          "web":"id:headline-345-111",
+          "expectedValue":"XPower AI"
+   },
+   "xPowerAIText":{
+          "web":"id:text_block-346-111",
+          "expectedValue":"Provides real-time data analysis, predictive market insights, and optimized risk management to improve trading performance and consistency."
+   },
+
+   "memberLoginButton":{
+     "web":"id:text_block-179-103"
+   }
+}

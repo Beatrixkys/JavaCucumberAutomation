@@ -1,0 +1,44 @@
+{
+    "aboutTab":{
+        "web": "id:menu-item-444"
+    },
+    "communityTab":{
+        "web": "id:menu-item-92"
+    },
+    "awardsTab":{
+        "web": "id:menu-item-670"
+    },
+    "productsTab":{
+        "web": "id:menu-item-441"
+    },
+    "helpSupportTab":{
+        "web": "id:menu-item-551"
+    },
+    "accountTab": {
+    "web": "id:menu-item-579"
+  },
+  "registerForDemoTab":{
+    "web":"id:menu-item-391"
+  },
+  "xPowerAITab":{
+    "web":"id:menu-item-589"
+  },
+  "expertAdvisorTab":{
+    "web":"id:menu-item-587"
+  },
+  "indicatorTab":{
+    "web":"id:menu-item-588"
+  },
+  "scriptsTab":{
+    "web":"id:menu-item-1521"
+  },
+  "courseTab":{
+    "web":"id:menu-item-1104"
+  },
+  "tabButton":{
+    "web": "className:oxy-menu-toggle"
+  },
+  "closeTabButton":{
+    "web": "className:oxy-menu-toggle"
+  }
+}
