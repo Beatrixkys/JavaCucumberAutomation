@@ -18,7 +18,7 @@ Scenario:To validate Tab Menu
     Then I validate Products Dropdown on Tab Menu
 
 @VerifyFooter @Feature:HomePage
-Scenario:To validate Footer
+Scenario:To validate Footer on Home Page 
     Given I am on "Home" Page
     Then I validate Footer Header section 
     And I validate Footer Company Links section

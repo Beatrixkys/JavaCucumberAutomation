@@ -10,7 +10,7 @@ Scenario:To validate About Page headers
     Then I validate About Page headers
 
 @VerifyFooter @Feature:AboutPage
-Scenario:To validate Footer
+Scenario:To validate Footer on About Page
     Given I am on "About" Page
     Then I validate Footer Header section 
     And I validate Footer Company Links section
