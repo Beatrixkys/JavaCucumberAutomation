@@ -6,11 +6,11 @@ import utils.WebHandlers;
 
 public class GeneralPage {
 
-    public void assertHeaders(String[] headerLocs){
+    public void assertHeaders(String[] headerLocs, String page){
         String[] components =  ["Subtitle","Header","Text"]; 
         for (String header in headerLocs){
              for (String component in components){
-                String locator = header+component;
+                String locator = page+"."header+component;
                 if LocatorRepository.get(locator) != null{
                     if(!WebHandlers.booleanElementDisplayed(locator)){
                         WebHandlers.scrollDown();

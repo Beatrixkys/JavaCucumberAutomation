@@ -4,15 +4,15 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import pages.GeneralPage;
 
-public class SauceProductSteps {
+public class HomePageSteps {
     GeneralPage generalPage = new GeneralPage();
 
-    @Then ("I validate home page headers")
+    @Then ("I validate Home Page headers")
     public void onProductsPage(){
-        String [] headers = ["HomePage.header","HomePage.tradingFuture","HomePage.showcase"
-                            "HomePage.advisor","HomePage.indicator","HomePage.awardWinning"
-                            "HomePage.xPowerAI"]; 
-        generalPage.assertHeaders(headers);
+        String [] headers = ["header","tradingFuture","showcase"
+                            "advisor","indicator","awardWinning"
+                            "xPowerAI"]; 
+        generalPage.assertHeaders(headers, "HomePage");
     }
 
 
