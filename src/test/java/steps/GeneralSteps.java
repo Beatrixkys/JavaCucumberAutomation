@@ -8,7 +8,7 @@ public class GeneralSteps {
     public void checkLinks(){
         Iterator<WebElement> it = WebHandlers.findElementLinks().iterator();
         while(it.hasNext()){
-            String url = it.next().getAttribute("href");
+            String url = WebHandlers.getURL(it.next());
             if (generalPage.checkEmptyLink(url) && generalPage.checkDevLink(url))
                 generalPage.checkBrokenLink(url); 
         }

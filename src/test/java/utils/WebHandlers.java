@@ -46,6 +46,15 @@ public class WebHandlers {
         return null;
     }
 
+    public static String getValue(String key){
+        return LocatorRepository.getValue(key);
+    }
+
+    public static String getURL(WebElement element){
+        return element.getAttribute("href"); 
+    }
+
+
     public static List<WebElement> findElementLinks(){
         return WebDriverConfigurations.getCurrentDriver().findElements(By.tagName("a"));
     }

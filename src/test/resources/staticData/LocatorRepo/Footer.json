@@ -3,69 +3,90 @@
         "web":"id:link-173-103"
     },
     "headerSubtitle":{
-        "web":"id:text_block-108-103"
+        "web":"id:text_block-108-103",
+        "expectedValue":"We combine years of expertise with cutting-edge technology to deliver superior automated trading solutions."
     },
     "subscribeTitle":{
-        "web":"id:headline-110-103"
+        "web":"id:headline-110-103",
+        "expectedValue":"Subscribe to get newest information!"
     }, 
-    "subscriptionInputBox":{
-
+    "subscribeInputBox":{
+        "web":"id:ff_2_3_email"
     },
-    "subscriptionButton":{
-
+    "subscribeButton":{
+        "web":"xpath://*[@id='fluentform_2']/fieldset/div/div[2]"
     },
     "companyTitle":{
-
+        "web":"id:headline-114-103",
+        "expectedValue":"Company"
     }, 
     "aboutUsCompanyLink":{
-
+        "web":"id:link_text-144-103",
+        "expectedValue":"About Us"
     },
     "awardsCompanyLink":{
-
+        "web":"id:link_text-145-103",
+        "expectedValue":"Awards"
     },
     "helpSupportCompanyLink":{
-
+        "web":"id:link_text-146-103",
+        "expectedValue":"Help Support"
     },
     "aboutForexForestCompanyLink":{
-
+        "web":"id:link_text-147-103",
+        "expectedValue":"About Forex Forest"
     },
     "demoProductCompanyLink":{
-
+        "web":"id:link_text-176-103",
+        "expectedValue":"Demo Product"
     },
     "quickLinksTitle":{
-
+        "web":"id:headline-191-103",
+        "expectedValue":"Quick Links"
     },
     "companyNewsQuickLink":{
-
+        "web":"id:link_text-192-103",
+        "expectedValue":"Company news"
     },
     "blogQuickLink":{
-        
+        "web":"id:link_text-193-103",
+        "expectedValue":"Blog"
     },
     "webinarQuickLink":{
-        
+        "web":"id:link_text-198-103",
+        "expectedValue":"Webinar"
     },
     "marketToTradeQuickLink":{
-        
+        "web":"id:link_text-194-103",
+        "expectedValue":"Market to trade"
     },
     "partnerWithUsQuickLink":{
-        
+        "web":"id:link_text-195-103",
+        "expectedValue":"Partner with us"
     },
     "careerQuickLink":{
-        
+        "web":"id:link_text-196-103",
+        "expectedValue":"Career"
     },
     "faqQuickLink":{
-
+        "web":"id:link_text-197-103",
+        "expectedValue":"FAQ"
     },
     "disclaimerNotes":{
-
+        "web":"id:text_block-166-103",
+        "expectedValue":"Disclaimer: All content and information provided in courses and tools are for simulation, testing, and educational purposes only, and do not constitute any invitation, solicitation, inducement, statement, recommendation, or advice related to investment. Investment involves risks, and investors should carefully consider whether they are suitable to participate in any investment project based on their own investment experience, investment objectives, financial resources, risk tolerance, and other relevant conditions."
     },
     "copyrightScheme":{
-
+        "web":"id:text_block-168-103", 
+        "expectedValue":"Copyright © 2024 Algo Forest. All Rights Reserved"
     }, 
     "termsAndConditionLink":{
-
+        "web":"id:link_text-171-103", 
+        "expectedValue":"Terms & Conditions"
     },
     "privacyPolicyLink":{
+        "web":"id:link_text-172-103", 
+        "expectedValue":"Privacy Policy"
         
     }
 }
