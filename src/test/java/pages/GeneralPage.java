@@ -1,22 +1,31 @@
 package pages;
 
+import java.io.IOException;
+
 import static org.junit.Assert.assertEquals;
 
 import utils.WebHandlers;
+import static utils.WebHandlers.scrollDown;
+
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import reporting.AllureSettings;
+import utils.LocatorRepository;
 
 public class GeneralPage {
 
     public void assertHeaders(String[] headerLocs, String page){
-        String[] components =  ["Subtitle","Header","Text"]; 
-        for (String header in headerLocs){
-             for (String component in components){
-                String locator = page+"."header+component;
-                if LocatorRepository.get(locator) != null{
+        String[] components =  {"Subtitle","Header","Text"}; 
+        for (String header : headerLocs){
+             for (String component : components){
+                String locator = component+page+"."+header; 
+                if (LocatorRepository.get(locator) != null){
                     if(!WebHandlers.booleanElementDisplayed(locator)){
-                        WebHandlers.scrollDown();
+                        scrollDown();
                     }
-                    String actual = WebHandlers.getText (locator);
-                    Assert.assertEquals (actual, WebHandlers.getValue);
+                    assertEquals (WebHandlers.getText (locator), WebHandlers.getValue(locator));
                 } else{
                      break;
                 }
@@ -26,15 +35,15 @@ public class GeneralPage {
 
     public Boolean checkDevLink(String url){
         if(url.contains("dev")){
-            AllureSettings.logToReport( "Tag" +it.next()+"is in dev :" + url);
+            AllureSettings.logToReport( "Tag is in dev :" + url);
             return true;
         } else{
             return false; 
         }
     }
-    public void checkEmptyLink(String url){
+    public Boolean checkEmptyLink(String url){
         if(url == null || url.isEmpty()){
-            AllureSettings.logToReport( "Tag" +it.next()+" is empty");
+            AllureSettings.logToReport( "Tag is empty");
             return true;
         } else{
             return false; 
@@ -43,10 +52,10 @@ public class GeneralPage {
 
     public void checkBrokenLink(String url){
         try {
-            huc = (HttpURLConnection)(new URL(url).openConnection());
+            HttpURLConnection huc = (HttpURLConnection)(new URL(url).openConnection());
             huc.setRequestMethod("HEAD");
             huc.connect();
-            respCode = huc.getResponseCode();
+            int respCode = huc.getResponseCode();
 
         if(respCode >= 400){
             AllureSettings.logToReport(url + " is a broken link");

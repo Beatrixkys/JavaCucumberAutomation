@@ -1,10 +1,11 @@
 package pages;
 
 import static org.junit.Assert.assertEquals;
-
 import utils.WebHandlers;
 
 public class FooterPage {
+
+    GeneralPage generalPage = new GeneralPage(); 
     public void validateHeader(){
         WebHandlers.checkElementDisplayed("Footer.headerButton");
         WebHandlers.checkElementDisplayed("Footer.headerSubtitle");
@@ -34,16 +35,16 @@ public class FooterPage {
     }
 
     public void checkLinks(String [] links, String linkType){
-        for (String link in links){
-            String loc = "Footer."+link+linkType
+        for (String link : links){
+            String loc = "Footer."+link+linkType;
             //check display and name
             WebHandlers.checkElementDisplayed(loc);
             assertEquals(WebHandlers.getText(loc),WebHandlers.getValue(loc)); 
             //Check url
             String url = WebHandlers.getURL(WebHandlers.waitForElement(loc)); 
-            GeneralPage.checkDevLink(url);
-            GeneralPage.checkEmptyLink(url); 
-            GeneralPage.checkBrokenLink(url);
+            generalPage.checkDevLink(url);
+            generalPage.checkEmptyLink(url); 
+            generalPage.checkBrokenLink(url);
         }
     }
     

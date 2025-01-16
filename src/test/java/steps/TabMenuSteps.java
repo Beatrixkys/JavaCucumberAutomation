@@ -1,7 +1,8 @@
 package steps;
 
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
+import utils.WebHandlers; 
 import pages.TabMenuPage;
 
 public class TabMenuSteps {
@@ -10,16 +11,16 @@ public class TabMenuSteps {
 
     @Given("I validate Tabs on Tab Menu")
     public void validateTabs(){
-        String [] tabs = ["about","community","awards",
-                        "products","helpSupport","account","registerForDemo"]; 
+        String[] tabs= {"about","community","awards",
+                        "products","helpSupport","account","registerForDemo"}; 
         menuPage.checkIfTabVisible();
         menuPage.checkTabs(tabs);  
     }
 
     @Given("I validate Products Dropdown on Tab Menu")
-    public void validateTabs(){
-        String [] tabs = ["xPowerAI","expertAdvisor","indicator"
-                        "scripts","course"]; 
+    public void validateProductTabs(){
+        String [] tabs = {"xPowerAI","expertAdvisor","indicator",
+                        "scripts","course"}; 
         menuPage.checkTabs(tabs);  
     }
 

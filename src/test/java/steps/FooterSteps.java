@@ -1,7 +1,7 @@
 package steps;
 
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
 import pages.FooterPage;
 
 public class FooterSteps {
@@ -15,8 +15,8 @@ public class FooterSteps {
 
     @And ("I validate Footer Company Links section")
     public void validateFooterCompany(){
-        String [] links = ["aboutUs","awards","helpSupport"
-                            "aboutForexForest","demoProduct"];
+        String [] links = {"aboutUs","awards","helpSupport",
+                            "aboutForexForest","demoProduct"};
         footerPage.validateTitle("company"); 
         footerPage.checkLinks(links,"CompanyLink"); 
     }
@@ -24,10 +24,10 @@ public class FooterSteps {
 
     @And ("I validate Footer Quick Links section")
     public void validateFooterQuickLinks(){
-        String [] links = ["companyNews","blog","webinar"
+        String [] links = {"companyNews","blog","webinar",
                             "marketToTrade","partnerWithUs","career",
-                            "faq"];
-        footerPage.validateTitle("quickLinks")
+                            "faq"};
+        footerPage.validateTitle("quickLinks");
         footerPage.checkLinks(links,"QuickLink"); 
     }
 
@@ -38,9 +38,9 @@ public class FooterSteps {
     
     @And ("I validate Copyright section")
     public void validateFooterCopyright(){
-        String [] links = ["termsAndCondition","privacyPolicy"];
+        String [] links = {"termsAndCondition","privacyPolicy"};
         footerPage.validateCopyright(); 
-        footerPage.checkLinks(privacyPolicy,"Link"); 
+        footerPage.checkLinks(links, "Link"); 
     }
 
 
