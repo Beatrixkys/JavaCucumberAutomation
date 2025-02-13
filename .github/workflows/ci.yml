@@ -1,0 +1,44 @@
+name: Run Rest Assured Tests with Allure Reporting
+
+on:
+  push:
+    branches:
+      - jsonPlaceholderAPIAutomation
+  pull_request:
+    branches:
+      - jsonPlaceholderAPIAutomation
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+
+    - name: Cache Maven packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-maven
+
+    - name: Install dependencies
+      run: mvn install
+
+    - name: Run Rest Assured Tests
+      run: mvn clean test
+
+    - name: Generate Allure Report
+      run: mvn allure:serve  # Serve the report locally
+
+    - name: Upload Allure Report as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: allure-report
+        path: target/allure-results  # Path to Allure results
